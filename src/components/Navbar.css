@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+}
+
+.navbar h1:hover {
+  color: #ff6b6b;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: #bbb;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6b6b;
+}
+.nav-links a.active {
+  color: #ff6b6b;
+}
+
+/* Navbar.css */
+
+/* Стили для мобильных устройств */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .menu-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #1d1d1d;
+    background-color: #333;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s forwards;
+
+    &:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    &:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+  }
+  .nav-links.open {
+    display: flex;
+    opacity: 1;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
