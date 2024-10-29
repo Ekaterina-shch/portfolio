@@ -12,6 +12,9 @@ const Projects = () => {
             <h3>{project.title}</h3>
             {project.description && <p>{project.description}</p>}
             <Link to={`/projects/${project.id}`}>Посмотреть детали</Link>
+            <div className="project-image">
+              <img src={project.img} alt="" />
+            </div>
           </div>
         ))}
       </div>

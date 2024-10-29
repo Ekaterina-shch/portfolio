@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { IoIosArrowBack } from 'react-icons/io';
+import { IoIosArrowBack, IoLogoGithub } from 'react-icons/io';
+import { LuExternalLink } from 'react-icons/lu';
 import projects from '../data/projects';
 import './PageStyles.css';
 
@@ -23,7 +24,8 @@ const ProjectDetail = () => {
             <div className="project-image__wrapper">
               <img src={project.img} alt="" />
             </div>
-            <p>{project.description}</p>
+
+            {project.description && <p>{project.description}</p>}
             <ul className="stack-list">
               {stack.map((item, index) => {
                 return (
@@ -33,13 +35,14 @@ const ProjectDetail = () => {
                 );
               })}
             </ul>
+
             <a
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="project-detail__btn"
+              className="project-detail__link"
             >
-              Гитхаб
+              <IoLogoGithub /> GutHub
             </a>
             <a
               href={project.link}
@@ -47,7 +50,7 @@ const ProjectDetail = () => {
               rel="noopener noreferrer"
               className="project-detail__btn"
             >
-              Посмотреть проект
+              Посмотреть проект <LuExternalLink />
             </a>
           </>
         ) : (

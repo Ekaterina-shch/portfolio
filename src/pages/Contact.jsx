@@ -1,4 +1,29 @@
+import { useState } from 'react';
+import { BsCopy } from 'react-icons/bs';
 import './PageStyles.css';
+
+const CopyButton = ({ textToCopy }) => {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+    } catch (error) {
+      console.error('Failed to copy text: ', error);
+    }
+  };
+
+  return (
+    <div className="copy-wrapp">
+      <button onClick={handleCopy} className="copy-button">
+        <BsCopy />
+      </button>
+      {isCopied && <p className="text-success">Скопировано!</p>}
+    </div>
+  );
+};
 
 const Contact = () => {
   return (
@@ -8,6 +33,7 @@ const Contact = () => {
         <p>
           Email:{' '}
           <a href="mailto:cool.allen28@yandex.ru">cool.allen28@yandex.ru</a>
+          <CopyButton textToCopy="cool.allen28@yandex.ru" />
         </p>
         <p>
           Telegram:{' '}
@@ -18,9 +44,10 @@ const Contact = () => {
           >
             @shche_e
           </a>
+          <CopyButton textToCopy="@shche_e" />
         </p>
         {/* <p>LinkedIn: </p> */}
-        <p>
+        {/* <p>
           GitHub:{' '}
           <a
             href="https://github.com/Ekaterina-shch"
@@ -29,7 +56,7 @@ const Contact = () => {
           >
             https://github.com/Ekaterina-shch
           </a>{' '}
-        </p>
+        </p> */}
       </div>
     </section>
   );
