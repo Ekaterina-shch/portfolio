@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section className="page contact">
       <div className="container">
-        <h2>Contact Me</h2>
+        <h2>Свяжитесь со Мной</h2>
         <p>
           Email:{' '}
           <a href="mailto:cool.allen28@yandex.ru">cool.allen28@yandex.ru</a>

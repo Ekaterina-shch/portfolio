@@ -4,10 +4,10 @@ const About = () => {
   return (
     <section className="page about">
       <div className="container">
-        <h2>About Me</h2>
+        <h2>Обо мне</h2>
         <p>
-          Frontend developer with a passion for creating engaging, accessible
-          web applications.
+          Фронтенд-разработчик с увлечением к созданию увлекательных и доступных
+          веб-приложений.
         </p>
       </div>
     </section>

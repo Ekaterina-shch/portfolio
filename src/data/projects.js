@@ -1,15 +1,21 @@
 const projects = [
   {
     id: '1',
-    title: 'Project 1',
-    description: 'Description of project 1',
-    link: '#',
+    title: 'Клуб четырех коней',
+    description: '',
+    img: '',
+    link: 'https://ekaterina-shch.github.io/four-horses-club/',
+    githubLink: 'https://github.com/Ekaterina-shch/four-horses-club',
+    stack: ['HTML', 'JS', 'CSS'],
   },
   {
     id: '2',
-    title: 'Project 2',
-    description: 'Description of project 2',
-    link: '#',
+    title: 'Мебельные туры - ROSEXPRESS',
+    description: 'Description',
+    img: '',
+    link: 'https://ekaterina-shch.github.io/test-task/',
+    githubLink: 'https://github.com/Ekaterina-shch/test-task',
+    stack: ['HTML', 'JS', 'CSS'],
   },
 ];
 

@@ -9,23 +9,45 @@ const ProjectDetail = () => {
 
   const project = projects.find((p) => p.id === projectId);
 
+  const stack = project.stack;
+
   return (
     <section className="page project-detail">
       <div className="container">
         <button onClick={() => navigate(-1)} className="btn-back">
-          <IoIosArrowBack /> Back
+          <IoIosArrowBack /> Назад к списку проектов
         </button>
         {project ? (
           <>
             <h2>{project.title}</h2>
+            <div className="project-image__wrapper">
+              <img src={project.img} alt="" />
+            </div>
             <p>{project.description}</p>
+            <ul className="stack-list">
+              {stack.map((item, index) => {
+                return (
+                  <li className="stack-item" key={index}>
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-detail__btn"
+            >
+              Гитхаб
+            </a>
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="project-detail__btn"
             >
-              View Project
+              Посмотреть проект
             </a>
           </>
         ) : (

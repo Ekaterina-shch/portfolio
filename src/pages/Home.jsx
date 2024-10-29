@@ -4,10 +4,10 @@ const Home = () => {
   return (
     <section className="page home">
       <div className="container">
-        <h2>Welcome to My Portfolio</h2>
+        <h2>Добро пожаловать в Мое портофолио</h2>
         <p>
-          I am a frontend developer passionate about creating user-friendly
-          experiences on the web.
+          Я front-end разработчик, увлеченный созданием удобного интерфейса в
+          Интернете.
         </p>
       </div>
     </section>

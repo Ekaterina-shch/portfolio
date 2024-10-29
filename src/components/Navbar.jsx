@@ -49,19 +49,19 @@ const Navbar = () => {
         onClick={() => setIsMenuOpen(false)}
       >
         <li className="menu-item">
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">Главная</NavLink>
         </li>
         <li className="menu-item">
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about">Обо мне</NavLink>
         </li>
         <li className="menu-item">
-          <NavLink to="/skills">Skills</NavLink>
+          <NavLink to="/skills">Навыки</NavLink>
         </li>
         <li className="menu-item">
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/projects">Проекты</NavLink>
         </li>
         <li className="menu-item">
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact">Контакты</NavLink>
         </li>
       </ul>
     </nav>
