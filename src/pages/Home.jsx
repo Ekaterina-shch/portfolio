@@ -6,7 +6,7 @@ const Home = () => {
     <section className="page home">
       <div className="container">
         <div className="info">
-          <h2>Добро пожаловать в&nbsp;Мое портофолио</h2>
+          <h1>Добро пожаловать в&nbsp;Мое портофолио</h1>
           <p>
             Я front-end разработчица, увлеченная созданием удобного интерфейса
             в&nbsp;Интернете.
@@ -21,7 +21,9 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="home-image">{/* <img src="" alt="" /> */}</div>
+        <div className="home-image">
+          <img src="/android-chrome-512x512.png" alt="" />
+        </div>
       </div>
     </section>
   );

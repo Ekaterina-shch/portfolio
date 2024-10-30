@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { BsCopy } from 'react-icons/bs';
+import { MdOutlineEmail } from 'react-icons/md';
+import { FaTelegramPlane } from 'react-icons/fa';
 import './PageStyles.css';
 
 const CopyButton = ({ textToCopy }) => {
@@ -30,13 +32,13 @@ const Contact = () => {
     <section className="page contact">
       <div className="container">
         <h2>Свяжитесь со Мной</h2>
-        <p>
-          Email:{' '}
+        <div className="contact-info">
+          <MdOutlineEmail styl /> Email:{' '}
           <a href="mailto:cool.allen28@yandex.ru">cool.allen28@yandex.ru</a>
           <CopyButton textToCopy="cool.allen28@yandex.ru" />
-        </p>
-        <p>
-          Telegram:{' '}
+        </div>
+        <div className="contact-info">
+          <FaTelegramPlane /> Telegram:{' '}
           <a
             href="https://t.me/shche_e"
             target="_blank"
@@ -45,7 +47,7 @@ const Contact = () => {
             @shche_e
           </a>
           <CopyButton textToCopy="@shche_e" />
-        </p>
+        </div>
         {/* <p>LinkedIn: </p> */}
         {/* <p>
           GitHub:{' '}

@@ -3,19 +3,19 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
-  background-color: #1d1d1d;
+  background-color: var(--bg-dark-color);
   color: #fff;
 }
 
-.navbar h1 {
+.navbar .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ff6b6b;
+  color: var(--primary-color);
   transition: color 0.3s ease;
 }
 
-.navbar h1:hover {
-  color: #ff6b6b;
+.navbar .logo:hover {
+  color: var(--primary-color);
 }
 
 .nav-links {
@@ -25,20 +25,18 @@
 }
 
 .nav-links a {
-  color: #bbb;
+  color: var(--text-gray);
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ff6b6b;
+  color: var(--primary-color);
 }
 .nav-links a.active {
-  color: #ff6b6b;
+  color: var(--primary-color);
 }
-
-/* Navbar.css */
 
 /* Стили для мобильных устройств */
 .hamburger {
@@ -50,7 +48,12 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .nav-links {
     display: none;
     position: absolute;
@@ -69,8 +72,8 @@
   }
   .menu-item {
     padding: 20px 0;
-    border-bottom: 1px solid #1d1d1d;
-    background-color: #333;
+    border-bottom: 1px solid var(--bg-dark-color);
+    background-color: var(--secondary-color);
     opacity: 0;
     transform: translateY(-20px);
     animation: slideIn 0.5s forwards;

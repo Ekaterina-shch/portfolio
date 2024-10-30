@@ -38,7 +38,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="logo">My Portfolio</h1>
+      <NavLink to="/" className="logo">
+        My Portfolio
+      </NavLink>
+
       <button className="hamburger" onClick={toggleMenu} ref={buttonRef}>
         {isMenuOpen ? <IoCloseOutline /> : <HiOutlineMenuAlt3 />}
       </button>

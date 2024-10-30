@@ -1,7 +1,6 @@
 import './PageStyles.css';
 
 const Skills = () => {
-  // const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Git'];
   const technicalSkills = [
     { name: 'HTML', description: 'Создание структурированных веб-страниц.' },
     { name: 'CSS', description: 'Стилизация и адаптивная верстка.' },
@@ -26,11 +25,7 @@ const Skills = () => {
       <div className="container">
         <h2>Навыки</h2>
         <h3>Технические навыки:</h3>
-        {/* <ul className="skills-list">
-          {skills.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul> */}
+
         <ul className="skills-list">
           {technicalSkills.map((skill) => (
             <li key={skill.name} className="skill-item">
