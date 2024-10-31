@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import './PageStyles.css';
+import LazyLoad from 'react-lazyload';
 import projects from '../data/projects';
+import './PageStyles.css';
 
 const Projects = () => {
   return (
@@ -13,7 +14,9 @@ const Projects = () => {
             {project.description && <p>{project.description}</p>}
             <Link to={`/projects/${project.id}`}>Посмотреть детали</Link>
             <div className="project-image">
-              <img src={project.img} alt="" />
+              <LazyLoad height={200} offset={100}>
+                <img src={project.img} alt="" />
+              </LazyLoad>
             </div>
           </div>
         ))}

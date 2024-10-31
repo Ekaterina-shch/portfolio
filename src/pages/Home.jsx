@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LazyLoad from 'react-lazyload';
 import './PageStyles.css';
 
 const Home = () => {
@@ -22,7 +23,9 @@ const Home = () => {
           </div>
         </div>
         <div className="home-image">
-          <img src="/android-chrome-512x512.png" alt="" />
+          <LazyLoad height={200} offset={100}>
+            <img src="/android-chrome-512x512.png" alt="" />
+          </LazyLoad>
         </div>
       </div>
     </section>
