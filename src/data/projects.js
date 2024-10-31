@@ -11,11 +11,20 @@ const projects = [
   {
     id: '2',
     title: 'Мебельные туры - ROSEXPRESS',
-    description: 'Description',
+    description: '',
     img: '/img/rosexpress.png',
     link: 'https://ekaterina-shch.github.io/test-task/',
     githubLink: 'https://github.com/Ekaterina-shch/test-task',
     stack: ['HTML', 'JS', 'CSS', 'SASS/SCSS', 'AOS'],
+  },
+  {
+    id: '3',
+    title: 'My Portfolio',
+    description: '',
+    img: '/img/',
+    link: '',
+    githubLink: '',
+    stack: ['HTML', 'JSX', 'CSS', 'React', 'React Router', 'React Icons'],
   },
 ];
 

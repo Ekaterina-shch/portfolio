@@ -3,13 +3,14 @@ import { IoIosArrowBack, IoLogoGithub } from 'react-icons/io';
 import { LuExternalLink } from 'react-icons/lu';
 import projects from '../data/projects';
 import './PageStyles.css';
+import { useState } from 'react';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
 
   const project = projects.find((p) => p.id === projectId);
-
+  const [isLoadingImage, setIsLoadingImage] = useState(false);
   const stack = project.stack;
 
   return (
@@ -22,7 +23,11 @@ const ProjectDetail = () => {
           <>
             <h2>{project.title}</h2>
             <div className="project-image__wrapper">
-              <img src={project.img} alt="" />
+              {isLoadingImage ? (
+                <img src={project.img} alt="" width="1000" height="550" />
+              ) : (
+                'Загрузка...'
+              )}
             </div>
 
             {project.description && <p>{project.description}</p>}
