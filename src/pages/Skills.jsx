@@ -8,7 +8,17 @@ const Skills = () => {
       name: 'JavaScript',
       description: 'Разработка интерактивных веб-приложений.',
     },
+    {
+      name: 'TypeScript',
+      description: 'Статическая типизация для надежного кода.',
+    },
     { name: 'React', description: 'Создание динамических интерфейсов.' },
+    {
+      name: 'SASS/SCSS',
+      description: 'Препроцессоры для эффективной стилизации.',
+    },
+    { name: 'REST API', description: 'Интеграция с бэкенд-сервисами.' },
+    { name: 'Webpack/Vite', description: 'Сборка и оптимизация проектов.' },
     { name: 'Git', description: 'Управление версиями и совместная работа.' },
   ];
   const additionalSkills = [

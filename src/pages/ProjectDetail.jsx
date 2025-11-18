@@ -38,22 +38,29 @@ const ProjectDetail = () => {
               })}
             </ul>
 
-            <a
-              href={project.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-detail__link"
-            >
-              <IoLogoGithub /> GutHub
-            </a>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-detail__btn"
-            >
-              Посмотреть проект <LuExternalLink />
-            </a>
+            {project.githubLink && (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-detail__link"
+              >
+                <IoLogoGithub /> GutHub
+              </a>
+            )}
+
+            {project.link ? (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-detail__btn"
+              >
+                Посмотреть проект <LuExternalLink />
+              </a>
+            ) : (
+              <p>У проекта пока нет демонстрационной версии</p>
+            )}
           </>
         ) : (
           <p>Project not found.</p>
