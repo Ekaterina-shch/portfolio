@@ -24,7 +24,10 @@ const Home = () => {
         </div>
         <div className="home-image">
           <LazyLoad height={200} offset={100}>
-            <img src="/android-chrome-512x512.png" alt="" />
+            <img
+              src={import.meta.env.BASE_URL + '/android-chrome-512x512.png'}
+              alt=""
+            />
           </LazyLoad>
         </div>
       </div>
