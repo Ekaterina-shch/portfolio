@@ -77,7 +77,7 @@ const projects = [
     title: 'GO-FOOD',
     description: '',
     img: `${import.meta.env.BASE_URL}/img/catering.png`,
-    link: 'https://catering.trasolog.ru/',
+    link: 'https://go-food.ru/',
     githubLink: '',
     stack: [
       'HTML',
