@@ -58,7 +58,7 @@ const projects = [
     title: 'Компьютеры и сети',
     description: '',
     img: `${import.meta.env.BASE_URL}/img/kis.png`,
-    link: 'https://clan.tw1.ru/',
+    link: 'https://c-lan.ru/',
     githubLink: '',
     stack: ['HTML', 'JS ES6+', 'CSS'],
   },
@@ -88,7 +88,6 @@ const projects = [
       'FSLightbox',
       'Swiper',
     ],
-    isDeveloping: true,
   },
 ];
 
