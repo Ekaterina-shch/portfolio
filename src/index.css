@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-  --primary-color: #ff6347;
+  /* --primary-color: #ff6347; */
+  --primary-color: #ff47a3;
   --secondary-color: #333;
   --text-color: #555;
   --text-gray: #bbb;
   --bg-dark-color: #1d1d1d;
   --bg-light-color: #f5f5f5;
-  --links-blue-color: #007bff;
-  --links-blue-hover-color: #0056b3;
+  --links-color: var(--primary-color);
+  --links-color-hover: #b6266e;
 
-  font-family: 'Mulish', system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+  font-family:
+    'Mulish',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
     sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,12 +76,12 @@ p {
 
 a {
   font-weight: 500;
-  color: var(--links-blue-color);
+  color: var(--links-color);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: var(--links-blue-hover-color);
+  color: var(--links-color-hover);
 }
 
 button {

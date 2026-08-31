@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar.jsx';
-import Footer from './components/Footer';
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import Skills from './pages/Skills.jsx';
-import Projects from './pages/Projects.jsx';
-import ProjectDetail from './pages/ProjectDetail.jsx';
-import Contact from './pages/Contact.jsx';
-import NotFound from './pages/NotFound.jsx';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import Home from './pages/Home.js';
+import About from './pages/About.js';
+import Skills from './pages/Skills.js';
+import Projects from './pages/Projects.js';
+import ProjectDetail from './pages/ProjectDetail.js';
+import Contact from './pages/Contact.js';
+import NotFound from './pages/NotFound.js';
 import './App.css';
 
 const App = () => {

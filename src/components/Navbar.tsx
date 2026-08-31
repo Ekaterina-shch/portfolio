@@ -1,3 +1,4 @@
+// src/components/Navbar.tsx
 import { NavLink } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
@@ -7,21 +8,20 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null);
-  const buttonRef = useRef(null);
+  const menuRef = useRef<HTMLUListElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      // Закрывает меню, если клик был вне меню и кнопки
+    const handleClickOutside = (e: MouseEvent | TouchEvent) => {
       if (
         menuRef.current &&
-        !menuRef.current.contains(e.target) &&
+        !menuRef.current.contains(e.target as Node) &&
         buttonRef.current &&
-        !buttonRef.current.contains(e.target)
+        !buttonRef.current.contains(e.target as Node)
       ) {
         setIsMenuOpen(false);
       }
@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="logo">
-        My Portfolio
+        Екатерина .dev{'/'}
       </NavLink>
 
       <button className="hamburger" onClick={toggleMenu} ref={buttonRef}>

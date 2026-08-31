@@ -1,4 +1,15 @@
-const projects = [
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  img: string;
+  link: string;
+  githubLink: string;
+  stack: string[];
+  isDeveloping?: boolean;
+}
+
+const projects: Project[] = [
   {
     id: 'four-horses-club',
     title: 'Клуб четырех коней',
@@ -60,7 +71,7 @@ const projects = [
     img: `${import.meta.env.BASE_URL}/img/kis.png`,
     link: 'https://c-lan.ru/',
     githubLink: '',
-    stack: ['HTML', 'JS ES6+', 'CSS'],
+    stack: ['HTML', 'JS ES6+', 'CSS', 'GSAP'],
   },
   {
     id: 'cinema-club',
@@ -70,7 +81,6 @@ const projects = [
     link: '',
     githubLink: 'https://github.com/Ekaterina-shch/cinema-club',
     stack: ['Next.js', 'TypeScript', 'CSS Modules', 'Swiper'],
-    isDeveloping: true,
   },
   {
     id: 'catering',
@@ -87,7 +97,37 @@ const projects = [
       'Perfect-scrollbar',
       'FSLightbox',
       'Swiper',
+      'Vite',
     ],
+  },
+  {
+    id: 'msu',
+    title: 'Лекции.РФ',
+    description: 'Платформа для преподавателей и студентов МГУ',
+    img: `${import.meta.env.BASE_URL}/img/msu.png`,
+    link: '',
+    githubLink: '',
+    stack: ['React', 'JS ES6+', 'CSS', 'Swiper', 'Vite'],
+    isDeveloping: false,
+  },
+  {
+    id: 'fun-casino',
+    title: 'Фан-казино',
+    description: '',
+    img: `${import.meta.env.BASE_URL}/img/funCasino.png`,
+    link: '',
+    githubLink: '',
+    stack: [
+      'HTML',
+      'TS',
+      'CSS',
+      'Swiper',
+      'Mapbox GL JS',
+      'Perfect-scrollbar',
+      'FSLightbox',
+      'Vite',
+    ],
+    isDeveloping: false,
   },
 ];
 

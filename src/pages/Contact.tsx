@@ -4,8 +4,12 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { FaTelegramPlane } from 'react-icons/fa';
 import './PageStyles.css';
 
-const CopyButton = ({ textToCopy }) => {
-  const [isCopied, setIsCopied] = useState(false);
+interface CopyButtonProps {
+  textToCopy: string;
+}
+
+const CopyButton = ({ textToCopy }: CopyButtonProps) => {
+  const [isCopied, setIsCopied] = useState<boolean>(false);
 
   const handleCopy = async () => {
     try {
@@ -33,7 +37,7 @@ const Contact = () => {
       <div className="container">
         <h2>Свяжитесь со Мной</h2>
         <div className="contact-info">
-          <MdOutlineEmail styl /> Email:{' '}
+          <MdOutlineEmail /> Email:{' '}
           <a href="mailto:cool.allen28@yandex.ru">cool.allen28@yandex.ru</a>
           <CopyButton textToCopy="cool.allen28@yandex.ru" />
         </div>
@@ -48,17 +52,6 @@ const Contact = () => {
           </a>
           <CopyButton textToCopy="@shche_e" />
         </div>
-        {/* <p>LinkedIn: </p> */}
-        {/* <p>
-          GitHub:{' '}
-          <a
-            href="https://github.com/Ekaterina-shch"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/Ekaterina-shch
-          </a>{' '}
-        </p> */}
       </div>
     </section>
   );
