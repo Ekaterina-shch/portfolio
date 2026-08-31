@@ -10,7 +10,7 @@ const ProjectDetail = () => {
   const navigate = useNavigate();
 
   const project = projects.find((p) => p.id === projectId);
-  const stack = project.stack;
+  const stack = project?.stack;
 
   return (
     <section className="page project-detail">
@@ -29,7 +29,7 @@ const ProjectDetail = () => {
 
             {project.description && <p>{project.description}</p>}
             <ul className="stack-list">
-              {stack.map((item, index) => {
+              {stack?.map((item, index) => {
                 return (
                   <li className="stack-item" key={index}>
                     {item}

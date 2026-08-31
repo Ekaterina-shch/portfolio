@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import LazyLoad from 'react-lazyload';
 import './PageStyles.css';
 
 const Home = () => {
