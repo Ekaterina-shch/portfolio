@@ -24,7 +24,7 @@ const Home = () => {
         </div>
         <div className="home-image">
           <img
-            src={import.meta.env.BASE_URL + '/ava.jpg'}
+            src={import.meta.env.BASE_URL + 'ava.jpg'}
             alt="Екатерина — Frontend разработчица"
           />
         </div>
