@@ -7,6 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  // base: '/portfolio/',
-  base: '/',
+  base: '/portfolio/',
 });
