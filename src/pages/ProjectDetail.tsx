@@ -1,7 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { IoIosArrowBack, IoLogoGithub } from 'react-icons/io';
 import { LuExternalLink } from 'react-icons/lu';
-import LazyLoad from 'react-lazyload';
 import projects from '../data/projects';
 import './PageStyles.css';
 
@@ -22,9 +21,7 @@ const ProjectDetail = () => {
           <>
             <h2>{project.title}</h2>
             <div className="project-image__wrapper">
-              <LazyLoad height={200} offset={100}>
-                <img src={project.img} alt="" width="1000" height="550" />
-              </LazyLoad>
+              <img src={project.img} alt="" width="1000" height="550" />
             </div>
 
             {project.description && <p>{project.description}</p>}
