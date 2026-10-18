@@ -3,21 +3,24 @@ import './PageStyles.css';
 const Skills = () => {
   const technicalSkills = [
     {
-      name: 'React / Next.js',
-      description: 'Создание SPA и SSR приложений, работа с React Hooks.',
-    },
-    {
-      name: 'TypeScript',
-      description: 'Строгая типизация, интерфейсы, дженерики и безопасный код.',
-    },
-    {
-      name: 'JavaScript (ES6+)',
-      description: 'Асинхронный JS, Event Loop, DOM API, работа с промисами.',
-    },
-    {
-      name: 'Redux Toolkit / Zustand',
+      name: 'React / TypeScript',
       description:
-        'Управление глобальным состоянием приложения (State Management).',
+        'Разработка SPA и UI-компонентов, строгая типизация, рефакторинг и перевод проектов с JS на TS для снижения ошибок.',
+    },
+    {
+      name: 'Next.js',
+      description:
+        'Понимание принципов SSR, SSG, маршрутизации (App Router), оптимизации производительности и SEO-ориентированной разработки.',
+    },
+    {
+      name: 'JavaScript (ES6+) & jQuery',
+      description:
+        'Чистая JS-логика, асинхронные запросы, обработка событий, поддержка и рефакторинг легаси-кода.',
+    },
+    {
+      name: 'HTML5 / CSS3 / SCSS / Tailwind CSS',
+      description:
+        'Адаптивная, кроссбраузерная и Mobile First верстка, Pixel Perfect, утилитные классы, создание переиспользуемых UI-библиотек.',
     },
     {
       name: 'React Query / RTK Query',
@@ -25,57 +28,57 @@ const Skills = () => {
         'Кеширование, менеджмент серверного состояния и асинхронных запросов.',
     },
     {
-      name: 'HTML5 & CSS3',
+      name: 'REST API',
       description:
-        'Семантическая верстка, Flexbox, Grid, адаптивный и кроссбраузерный дизайн.',
+        'Интеграция фронтенда с бэкенд-сервисами и CRM-системами, обработка данных, валидация и отправка форм (включая Keitaro/Binom).',
     },
     {
-      name: 'Tailwind CSS / SCSS',
+      name: 'Vite',
       description:
-        'Быстрая стилизация с помощью утилитных классов и препроцессоров.',
+        'Сборка и локальная разработка приложений, настройка и оптимизация итоговых бандлов.',
     },
-    {
-      name: 'REST API & Axios',
-      description:
-        'Интеграция с бэкенд-сервисами, обработка ошибок и авторизация.',
-    },
-    {
-      name: 'Vite & Webpack',
-      description: 'Сборка, конфигурирование и оптимизация банндлов.',
-    },
+
     {
       name: 'Git & GitHub/GitLab',
-      description:
-        'Ветвление (Git Flow), Code Review, Pull Requests и совместная работа.',
+      description: 'Контроль версий, ветвление.',
     },
   ];
   const additionalSkills = [
     {
-      name: 'Testing (Jest / React Testing Library)',
-      description: 'Написание Unit и интеграционных тестов для компонентов.',
-    },
-    {
-      name: 'Performance Optimization',
+      name: 'Google PageSpeed Insights & Performance',
       description:
-        'Профилирование, Lazy Loading, Code Splitting, Memoization (useMemo/React.memo).',
+        'Оптимизация скорости загрузки (Google PageSpeed 90+), минимизация кода, оптимизация медиафайлов (снижение среднего веса страниц до <500 Кб).',
     },
     {
-      name: 'Figma & UI/UX Design',
-      description: 'Pixel Perfect верстка по макетам, работа с UI-китами.',
+      name: 'Cross-Browser & Mobile First',
+      description:
+        'Гарантированная корректность отображения на всех устройствах.',
     },
     {
-      name: 'Web Accessibility (a11y)',
-      description: 'Создание доступных интерфейсов с использованием WAI-ARIA.',
+      name: 'Figma / Photoshop',
+      description:
+        'Точная верстка по макетам, работа с UI-китами и дизайн-системами.',
+    },
+    {
+      name: 'PHP (Базовый)',
+      description:
+        'Интеграция верстки с серверными шаблонами, настройка отправки форм.',
     },
     {
       name: 'Deployment & Hosting',
-      description:
-        'Публикация веб-приложений на Vercel/Netlify, опыт работы с FTP-серверами.',
+      description: 'Публикация приложений на Vercel / Netlify.',
     },
     {
-      name: 'Node.js & npm',
-      description:
-        'Понимание экосистемы Node.js, работа с пакетными менеджерами и скриптами сборки.',
+      name: 'Code Review & Менторство',
+      description: 'Проверка качества кода, контроль стандартов верстки.',
+    },
+    {
+      name: 'Управление задачами',
+      description: 'Распределение задач внутри направления, контроль сроков.',
+    },
+    {
+      name: 'Кросс-функциональное взаимодействие',
+      description: 'Работа с backend-разработчиками и дизайнерами.',
     },
   ];
   return (
